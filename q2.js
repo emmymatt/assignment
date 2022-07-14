@@ -31,11 +31,12 @@ class MetadataParser {
     }
 
     static getKeyFields(input){
-        const keyFields = [];
-        for(let key of input){
-            keyFields.push(key.getKeyField());
-        }
-        return keyFields;
+        // const keyFields = [];
+        // for(let key of input){
+        //     keyFields.push(key.getKeyField());
+        // }
+        // return keyFields;
+        return input.map(elem => elem.getKeyField());
     }
 }
 

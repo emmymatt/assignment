@@ -1,15 +1,24 @@
 
 function groupObjectsBy(objects, key) {
-    const groups = {};
-    for (let object of objects) {
+    // const groups = {};
+    // for (let object of objects) {
+    //     if(groups.hasOwnProperty(object[key])) {
+    //         groups[object[key]].push(object);
+    //     }
+    //     else{
+    //         groups[object[key]] = [object];
+    //     }
+    // }
+    // return groups;
+    return objects.reduce((groups, object) => {
         if(groups.hasOwnProperty(object[key])) {
             groups[object[key]].push(object);
         }
         else{
             groups[object[key]] = [object];
         }
-    }
-    return groups;
+        return groups;
+    }, {});
 }
 
 console.log(groupObjectsBy([ 
