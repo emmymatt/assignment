@@ -1,0 +1,29 @@
+{
+  "name": "xmlparse",
+  "version": "1.0.0",
+  "description": "wrapper for xmlparser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Emmy",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "async": "^3.2.4",
+    "axios": "^0.27.2",
+    "bitly": "^7.1.2",
+    "csv": "^6.2.0",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.0.1",
+    "events": "^3.3.0",
+    "handlebars": "^4.7.7",
+    "node-fetch": "^2.6.7",
+    "request": "^2.88.2",
+    "sharp": "^0.30.7",
+    "xml-parser": "^1.2.1",
+    "zlib": "^1.0.5"
+  }
+}
