@@ -3,9 +3,9 @@ const fs = require('fs')
 const async = require('async')
 const fetch = require('node-fetch')
 const zlib = require('zlib')
-let i = 0
+
 async.parallel(
-    urls.map(url => {
+    urls.map((url, i) => {
         return async callback => {
             const response = await fetch(url);
             const buffer = await response.buffer();
